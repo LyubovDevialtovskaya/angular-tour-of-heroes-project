@@ -5,7 +5,7 @@ const app = express();
 app.use(express.static(`${__dirname}/dist/angular-tour-of-heroes-project` )); 
 // send all requests to index.html 
 app.get('/*', (req, res) => { 
- res.sendFile(path.join(`${__dirname}/dist/angular-tour-of-heroes-project/index.html` )); }); 
+ res.sendFile(path.join(`${__dirname}dist/tour-of-heroes/index.html` )); }); 
 // default Heroku PORT 
 app.listen(process.env.PORT || 3000); 
 
